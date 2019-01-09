@@ -1,15 +1,15 @@
 ext {
     /Android/
-    applicationId =  "com.app.cmp"
+    applicationId =  "com.app.c1"
     minSdkVersion = 18
     targetSdkVersion = 28
     compileSdkVersion = 28
     versionCode = 1
     versionName = "1.0"
 
-    resourcePrefix= "cmp_"
+    resourcePrefix= "c1_"
     schemaVersion= 1
-    dbName= "cmp.db"
+    dbName= "c1.db"
 
     /Http Config/
     server = [

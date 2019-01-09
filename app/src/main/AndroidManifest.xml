@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <meta-data
-            android:name="com.app.cmp.config.app.CmpLifeCycle"
+            android:name="com.app.cmp.config.app.C1mpLifeCycle"
             android:value="com.config.app">
         </meta-data>
         <activity android:name=".mvp.activity.MainActivity">
