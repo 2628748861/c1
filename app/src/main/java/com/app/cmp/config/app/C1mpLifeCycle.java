@@ -15,7 +15,7 @@ public class C1mpLifeCycle implements AppLifecycle {
     public void onAttach(Context applicationContext) {
         Log.e("TAG","初始化:"+C1mpLifeCycle.class.getSimpleName());
         HttpApiProxy.init(new RetrofitApi());
-        DbApiProxy.init(new GreenDaoApi(applicationContext,BuildConfig.DB_NAME));
+        DbApiProxy.init(new GreenDaoApi(applicationContext,"a.db"));
 
     }
 }

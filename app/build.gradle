@@ -24,28 +24,28 @@ android {
         }
     }
 
-    buildTypes {
-        debug {
-            buildConfigField("String", "API", "\"" + rootProject.ext.server["debugServerUrl"] + "\"")
-            buildConfigField("String", "WEB_URL", "\"" + rootProject.ext.server["debugWeburl"] + "\"")
-            buildConfigField "String", "DB_NAME", "\"" + rootProject.ext.dbName + "\""
-
-            //signingConfig signingConfigs.release
-            minifyEnabled false
-        }
-
-        release {
-            buildConfigField("String", "API", "\"" + rootProject.ext.server["releaseServerUrl"] + "\"")
-            buildConfigField("String", "WEB_URL", "\"" + rootProject.ext.server["releaseWebrUrl"] + "\"")
-            buildConfigField "String", "DB_NAME", "\"" + rootProject.ext.dbName + "\""
-
-//            signingConfig signingConfigs.release
-//            minifyEnabled true
-//            shrinkResources true
-//            zipAlignEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
+//    buildTypes {
+//        debug {
+//            buildConfigField("String", "API", "\"" + rootProject.ext.server["debugServerUrl"] + "\"")
+//            buildConfigField("String", "WEB_URL", "\"" + rootProject.ext.server["debugWeburl"] + "\"")
+//            buildConfigField "String", "DB_NAME", "\"" + rootProject.ext.dbName + "\""
+//
+//            //signingConfig signingConfigs.release
+////            minifyEnabled false
+//        }
+//
+//        release {
+//            buildConfigField("String", "API", "\"" + rootProject.ext.server["releaseServerUrl"] + "\"")
+//            buildConfigField("String", "WEB_URL", "\"" + rootProject.ext.server["releaseWebrUrl"] + "\"")
+//            buildConfigField "String", "DB_NAME", "\"" + rootProject.ext.dbName + "\""
+//
+////            signingConfig signingConfigs.release
+////            minifyEnabled true
+////            shrinkResources true
+////            zipAlignEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//    }
     resourcePrefix rootProject.ext.resourcePrefix
     greendao {
         schemaVersion rootProject.ext.schemaVersion

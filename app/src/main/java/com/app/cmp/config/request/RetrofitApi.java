@@ -20,7 +20,7 @@ public final class RetrofitApi implements IHttpApi {
 
         OkHttpClient.Builder okHttpClient = new OkHttpClient.Builder();
         retrofit = new Retrofit.Builder()
-                .baseUrl(BuildConfig.API)
+                .baseUrl("http://www.baidu.com")
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(okHttpClient.build())
