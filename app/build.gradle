@@ -14,15 +14,15 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    //签名信息
-    signingConfigs {
-        release {
-            storeFile file("***")
-            storePassword "***"
-            keyAlias "***"
-            keyPassword "***"
-        }
-    }
+//    //签名信息
+//    signingConfigs {
+//        release {
+//            storeFile file("***")
+//            storePassword "***"
+//            keyAlias "***"
+//            keyPassword "***"
+//        }
+//    }
 
 //    buildTypes {
 //        debug {
