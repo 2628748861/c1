@@ -39,10 +39,10 @@ android {
             buildConfigField("String", "WEB_URL", "\"" + rootProject.ext.server["releaseWebrUrl"] + "\"")
             buildConfigField "String", "DB_NAME", "\"" + rootProject.ext.dbName + "\""
 
-            signingConfig signingConfigs.release
-            minifyEnabled true
-            shrinkResources true
-            zipAlignEnabled true
+//            signingConfig signingConfigs.release
+//            minifyEnabled true
+//            shrinkResources true
+//            zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
