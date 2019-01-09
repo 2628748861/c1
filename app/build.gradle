@@ -30,7 +30,7 @@ android {
             buildConfigField("String", "WEB_URL", "\"" + rootProject.ext.server["debugWeburl"] + "\"")
             buildConfigField "String", "DB_NAME", "\"" + rootProject.ext.dbName + "\""
 
-            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.release
             minifyEnabled false
         }
 
